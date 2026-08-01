@@ -5,9 +5,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-env:
-  DOCKER_IMAGE: ${{ secrets.DOCKER_HUB_USERNAME }}/mon-pipeline-cicd
-  
+
 jobs:
   build:
     name: Build & Test
