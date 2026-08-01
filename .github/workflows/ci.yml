@@ -18,8 +18,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'maven'
  
       - name: Compiler et tester
         run: ./mvnw clean verify
         
+
 
